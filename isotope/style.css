@@ -24,7 +24,6 @@ html { -webkit-font-smoothing: antialiased; }
 body {
   font-family: 'Droid Sans', sans-serif;
   font-weight: 400;
-  background: #ccc;
   color: #000;
   font-size: 12px;
 }
@@ -595,7 +594,7 @@ header {
   display: inline-block;
   padding: 0px 15px;
   margin: 0 auto;
-  background: #ccc;
+  background: #fff;
   font-family: 'Economica', Arial, sans-serif !important;
   color: rgba(180,180,180,.8);
   text-shadow: 0px 1px 0px rgba(255,255,255,.4), 0 0 0px rgba(0,0,0,.2);
