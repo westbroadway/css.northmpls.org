@@ -520,13 +520,6 @@ jQuery(document).ready(function () {
         $container.isotope( options );
       }
 
-      $('a.remove').click( function( jQEvent ) {
-        var url = $(this).attr('href');
-        $.get(url);
-        $container.isotope('remove', $(this).parent().parent().parent());
-        return false;
-      });
-
       return false;
 
       });
@@ -585,6 +578,13 @@ jQuery(document).ready(function($) {
     e.preventDefault();
     $(this).tab('show');
   })
+
+  $('a.remove').click( function( jQEvent ) {
+    var url = $(this).attr('href');
+    $.get(url);
+    $('#wall').isotope('remove', $(this).parent().parent().parent());
+    return false;
+  });
 
 });
 
