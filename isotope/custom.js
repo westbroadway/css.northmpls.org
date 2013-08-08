@@ -520,6 +520,14 @@ jQuery(document).ready(function () {
         $container.isotope( options );
       }
 
+      $('a.remove').click( function( jQEvent ) {
+        var url = $(this).attr('href');
+        $.get(url);
+        $container.isotope('remove', $(this).parent().parent().parent());
+        jQEvent.preventDefault();
+        return false;
+      });
+
       return false;
 
       });
