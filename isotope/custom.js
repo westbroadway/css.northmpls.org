@@ -524,7 +524,6 @@ jQuery(document).ready(function () {
         var url = $(this).attr('href');
         $.get(url);
         $container.isotope('remove', $(this).parent().parent().parent());
-        jQEvent.preventDefault();
         return false;
       });
 
